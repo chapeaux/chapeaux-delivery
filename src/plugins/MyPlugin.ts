@@ -1,6 +1,7 @@
-import {AppPlugin} from "../src/App";
+import { PluginTemplate } from "../../lib/pluginTemplate.ts";
+import { App } from "../App.ts";
 
-export class MyPlugin extends AppPlugin {
+export default class MyPlugin extends PluginTemplate<App> {
     name = "my-plugin";
     
     version = "1.0.0";
@@ -11,3 +12,5 @@ export class MyPlugin extends AppPlugin {
       console.log("My plugin stopped");
     }
   }
+
+  

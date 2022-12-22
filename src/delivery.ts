@@ -20,14 +20,15 @@ CLI args
   - host/h = host config files path (default = ./)
   - namespace/n = namespace config/plugin files path (default = ./)
 
-Lifecycle
-  - Request
-  - Check Cache/Catalog
-  - Navigate Host (look for specific host config)
-  - Navigate Namespace (look for NS plugin)
-  - Find NS Org
-  - Find NS Org Module (@Version)
-  - 
+Lifecycle Hooks
+  - request - (Request) => Request
+  - cache - Check Cache/Catalog
+  - host - Navigate Host (look for specific host config)
+  - ns - Navigate Namespace (look for NS plugin)
+  - org - Find NS Org
+  - module - Find NS Org Module (@Version)
+  - ext - handle specific file extensions
+  - flag - handle 
 
 */
 
@@ -60,3 +61,5 @@ const app = new App();
 app.start();
 
 app.stop();
+
+close();

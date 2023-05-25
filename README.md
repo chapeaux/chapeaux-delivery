@@ -25,3 +25,14 @@ Financial institution branch teller web interface. Deployed as an app on a remot
 Request is made by teller workstation, DNS checks performance tables and sees that the local cluster includes a Chapeaux HEAD Server, routes to the files hosted at the local branch cluster, and serves from there. Logo file was not cached, so HEAD server routes to the global file and caches it. Instead of routing out to the global URL for every asset, the request is handled locally, to improve performance.
 
 ![Architecture Diagram](chapeaux-delivery.svg)
+
+## Feature Requests:
+* User notifications - ability for people/teams to subscribe and publish notices (deprecation, security, etc.)
+* Dependency agnosticism/resolution - (aka Module Spec transforms) script@vX.Y.Z will have correctly versioned dependencies
+* Import Map generation
+* Vendor bundling
+* Minified Builds + sourcemaps
+* "Default" files (ala JSDelivr)
+* Custom querystring flags (ala ESM.sh; e.g. )
+* Custom Headers (e.g. - Deno's X-TypeScript-Types)
+

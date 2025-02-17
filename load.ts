@@ -1,57 +1,28 @@
 import { TextLineStream, toText } from "jsr:@std/streams";
 
 const store = 'http://127.0.0.1:7878';
-const mimeTypeRegExp = /(?<mimetype>[\w\d]+\/[\w\d]+)[\t\s]+/g;
-const extRegExp = /\w+[ ?\w+]+$/g;
-const decoder = new TextDecoder('utf-8');
+const mimeTypeRegExp = /^(?<mimetype>[\w\d]+\/[\w\d\-\.]+)[^\n\r][\t\s]+(?<exts>[ \w]+)/g;
+// const mimeTypeRegExp = /(?<mimetype>[\w\d]+\/[\w\d\-\.]+)[\t\s]+/g;
+// const extRegExp = /\t+(?<exts>\w+[ ?\w+]?)/g;
 const mimetypes = new Map();
 const mimeTypeStream = await fetch('https://svn.apache.org/viewvc/httpd/httpd/trunk/docs/conf/mime.types?view=co');
-// const mimeTypeStream = ReadableStream.from([
-//     "# text/grammar-ref-list\n",
-//     "text/html					html htm\n",
-//     "text/javascript					js mjs\n",
-//     "# text/jcr-cnd\n",
-//     "# text/markdown\n",
-//     "# text/mizar\n",
-//     "text/n3						n3"
-//   ]);
 const mimes = await mimeTypeStream.text();
 mimes.split('\n').map(m => {
     if (m[0] !== "#") {
-        console.log(m.match(mimeTypeRegExp)?.groups);
-        // const mime = m.match(mimeTypeRegExp)?.groups?.mimetype;
-        // const exts = m.match(extRegExp)[0].split(' ');
-        // exts.map(t=>mimetypes.set(t,mime));
+        // if (m.indexOf('text/javascript') >= 0) { 
+        //     console.log(m);
+        //     console.log(mimeTypeRegExp.exec(m)?.groups); 
+        // }
+        const results = mimeTypeRegExp.exec(m);
+        console.log(results);
+        const {mime, exts} = results.groups;
+        // console.log(exts);
+        exts?.trim().split(' ').map(t=>mimetypes.set(t,mime));
     }
     
 });
-    // //.pipeThrough(new TextLineStream())    
-    // //.pipeThrough(new TextEncoderStream())    
-    // .pipeTo(new WritableStream({
-    //     write(chunk) {
-    //         new Promise((resolve,reject) => {
-    //             decoder.decode(chunk));
-    //             // try {
-    //             //     if (chunk[0] !== "#") {
-    //             //         const mime = chunk.match(mimeTypeRegExp).groups.mimetype;
-    //             //         const exts = chunk.match(extRegExp)[0].split(' ');
-    //             //         exts.map(t=>mimetypes.set(t,mime));
-    //             //     }
-    //             // } catch(err) {
-    //             //     console.log(err, " | CHUNK:",chunk);
-    //             // }
-    //             resolve();
-    //         });
-    //     },
-    //     close() {
-    //         console.log([...mimetypes])
-    //     },
-    //     abort(err) {
-    //         console.log("Sink error:",err);
-    //     }
-    // }))
 
-console.log([...mimetypes])
+console.log(`HTML: ${mimetypes.get('html')} | CSS: ${mimetypes.get('css')} | JS: ${mimetypes.get('js')}`)
 /*
 query - 
     method: POST

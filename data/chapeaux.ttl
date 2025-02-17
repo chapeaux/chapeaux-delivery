@@ -3,7 +3,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix cpx: <http://chapeaux.io/vocabulary/> .
-@prefix cpxs: <http://chapeaux.io/schemas/> .
+@prefix cpxs: <http://chapeaux.io/schema/> .
 
 xsd:integer rdf:type rdfs:Datatype .
 
@@ -15,10 +15,13 @@ cpxs:hosts rdf:type rdf:Property ;
 <https://redhat.com/> rdf:type cpxs:Host ;
     cpxs:hosts <https://access.redhat.com/> ;
     cpxs:hosts <https://catalog.redhat.com/> ;
-    cpxs:hosts <https://developers.redhat.com/> .
+    cpxs:hosts <https://developers.redhat.com/> ;
+    cpxs:hosts <https://connect.redhat.com/> ;
+    cpxs:hosts <https://ux.redhat.com/> .
 
 cpxs:Namespace rdf:type rdfs:Class .
 cpxs:Organization rdf:type rdfs:Class .
+cpxs:Package rdf:type rdfs:Class .
 cpxs:Module rdf:type rdfs:Class .
 cpxs:Library rdf:type rdfs:Class .
 cpxs:Asset rdf:type rdfs:Class .

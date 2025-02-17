@@ -10,30 +10,30 @@
   <script type="importmap">
   {
     "imports": {
-      "@rhds/elements/": "https://localhost:8000/dx/v2-alpha/@rhds/elements@1.4.1/elements/",
-      "@rhds/elements/lib/": "https://localhost:8000/dx/v2-alpha/@rhds/elements@1.1.0/lib/",
-      "@patternfly/elements/": "https://localhost:8000/dx/v2-alpha/@patternfly/elements@3.0.1/elements/",
-      "@patternfly/icons/": "https://localhost:8000/dx/v2-alpha/@patternfly/icons@1.0.2/"
+      "@rhds/elements/": "./v2-alpha/@rhds/elements@1.4.1/elements/",
+      "@rhds/elements/lib/": "./v2-alpha/@rhds/elements@1.1.0/lib/",
+      "@patternfly/elements/": "./v2-alpha/@patternfly/elements@3.0.1/elements/",
+      "@patternfly/icons/": "./v2-alpha/@patternfly/icons@1.0.2/"
     },
     "scopes": {
-      "https://localhost:8000/": {
-        "@floating-ui/core": "https://localhost:8000/dx/v2-alpha/@floating-ui/core@1.6.8/dist/floating-ui.core.mjs",
-        "@floating-ui/dom": "https://localhost:8000/dx/v2-alpha/@floating-ui/dom@1.6.11/dist/floating-ui.dom.mjs",
-        "@floating-ui/utils": "https://localhost:8000/dx/v2-alpha/@floating-ui/utils@0.2.8/dist/floating-ui.utils.mjs",
-        "@floating-ui/utils/dom": "https://localhost:8000/dx/v2-alpha/@floating-ui/utils@0.2.8/dist/floating-ui.utils.dom.mjs",
-        "@lit/context": "https://localhost:8000/dx/v2-alpha/@lit/context@1.1.3/development/index.js",
-        "@lit/reactive-element": "https://localhost:8000/dx/v2-alpha/@lit/reactive-element@2.0.4/development/reactive-element.js",
-        "@lit/reactive-element/decorators/": "https://localhost:8000/dx/v2-alpha/@lit/reactive-element@2.0.4/development/decorators/",
-        "@patternfly/pfe-core": "https://localhost:8000/dx/v2-alpha/@patternfly/pfe-core@3.0.0/core.js",
-        "@patternfly/pfe-core/": "https://localhost:8000/dx/v2-alpha/@patternfly/pfe-core@3.0.0/",
-        "@rhds/elements/rh-avatar/rh-avatar.js": "https://localhost:8000/dx/v2-alpha/@rhds/elements@1.4.1/elements/rh-avatar/rh-avatar.js",
-        "@rhds/tokens/media.js": "https://localhost:8000/dx/v2-alpha/@rhds/tokens@2.1.0/js/media.js",
-        "lit": "https://localhost:8000/dx/v2-alpha/lit@3.2.1/index.js",
-        "lit-element/lit-element.js": "https://localhost:8000/dx/v2-alpha/lit-element@4.1.1/development/lit-element.js",
-        "lit-html": "https://localhost:8000/dx/v2-alpha/lit-html@3.2.1/development/lit-html.js",
-        "lit-html/": "https://localhost:8000/dx/v2-alpha/lit-html@3.2.1/development/",
-        "lit/": "https://localhost:8000/dx/v2-alpha/lit@3.2.1/",
-        "tslib": "https://localhost:8000/dx/v2-alpha/tslib@2.7.0/tslib.es6.mjs"
+      "./": {
+        "@floating-ui/core": "./v2-alpha/@floating-ui/core@1.6.8/dist/floating-ui.core.mjs",
+        "@floating-ui/dom": "./v2-alpha/@floating-ui/dom@1.6.11/dist/floating-ui.dom.mjs",
+        "@floating-ui/utils": "./v2-alpha/@floating-ui/utils@0.2.8/dist/floating-ui.utils.mjs",
+        "@floating-ui/utils/dom": "./v2-alpha/@floating-ui/utils@0.2.8/dist/floating-ui.utils.dom.mjs",
+        "@lit/context": "./v2-alpha/@lit/context@1.1.3/development/index.js",
+        "@lit/reactive-element": "./v2-alpha/@lit/reactive-element@2.0.4/development/reactive-element.js",
+        "@lit/reactive-element/decorators/": "./v2-alpha/@lit/reactive-element@2.0.4/development/decorators/",
+        "@patternfly/pfe-core": "./v2-alpha/@patternfly/pfe-core@3.0.0/core.js",
+        "@patternfly/pfe-core/": "./v2-alpha/@patternfly/pfe-core@3.0.0/",
+        "@rhds/elements/rh-avatar/rh-avatar.js": "./v2-alpha/@rhds/elements@1.4.1/elements/rh-avatar/rh-avatar.js",
+        "@rhds/tokens/media.js": "./v2-alpha/@rhds/tokens@2.1.0/js/media.js",
+        "lit": "./v2-alpha/lit@3.2.1/index.js",
+        "lit-element/lit-element.js": "./v2-alpha/lit-element@4.1.1/development/lit-element.js",
+        "lit-html": "./v2-alpha/lit-html@3.2.1/development/lit-html.js",
+        "lit-html/": "./v2-alpha/lit-html@3.2.1/development/",
+        "lit/": "./v2-alpha/lit@3.2.1/",
+        "tslib": "./v2-alpha/tslib@2.7.0/tslib.es6.mjs"
       }
     }
   }
@@ -44,12 +44,12 @@
   @import url('https://ux.redhat.com/styles/reset.css') layer(reset);
   @import url('https://ux.redhat.com/styles/fonts.css') layer(fonts);
   @import url('https://staging-chansey--red-hat-design-system.netlify.app/assets/rhds.min.css') layer(rhds-min-css);
-  @import url('https://localhost:8000/dx/v2-alpha/@rhds/elements@1.4.1/elements/rh-skip-link/rh-skip-link-lightdom-shim.css') layer(lightdom);
-  @import url('https://localhost:8000/dx/v2-alpha/@rhds/elements@1.4.1/elements/rh-navigation-secondary/rh-navigation-secondary-lightdom.css') layer(lightdom);
-  @import url('https://localhost:8000/dx/v2-alpha/@rhds/elements@1.4.1/elements/rh-audio-player/rh-audio-player-lightdom.css') layer(lightdom);
-  @import url('https://localhost:8000/dx/v2-alpha/@rhds/elements@1.4.1/elements/rh-pagination/rh-pagination-lightdom.css') layer(lightdom);
-  @import url('https://localhost:8000/dx/v2-alpha/@rhds/elements@1.4.1/elements/rh-table/rh-table-lightdom.css') layer(lightdom);
-  @import url('https://localhost:8000/dx/v2-alpha/@rhds/elements@1.4.1/elements/rh-tile/rh-tile-lightdom.css') layer(lightdom);
+  @import url('./v2-alpha/@rhds/elements@1.4.1/elements/rh-skip-link/rh-skip-link-lightdom-shim.css') layer(lightdom);
+  @import url('./v2-alpha/@rhds/elements@1.4.1/elements/rh-navigation-secondary/rh-navigation-secondary-lightdom.css') layer(lightdom);
+  @import url('./v2-alpha/@rhds/elements@1.4.1/elements/rh-audio-player/rh-audio-player-lightdom.css') layer(lightdom);
+  @import url('./v2-alpha/@rhds/elements@1.4.1/elements/rh-pagination/rh-pagination-lightdom.css') layer(lightdom);
+  @import url('./v2-alpha/@rhds/elements@1.4.1/elements/rh-table/rh-table-lightdom.css') layer(lightdom);
+  @import url('./v2-alpha/@rhds/elements@1.4.1/elements/rh-tile/rh-tile-lightdom.css') layer(lightdom);
   @import url('https://ga.jspm.io/npm:@rhds/elements@1.4.1/elements/rh-footer/rh-footer-lightdom.css') layer(lightdom);
 
   @layer base {

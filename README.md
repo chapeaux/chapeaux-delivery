@@ -30,7 +30,7 @@ Request is made by teller workstation, DNS checks performance tables and sees th
 * User notifications - ability for people/teams to subscribe and publish notices (deprecation, security, etc.)
 * Dependency agnosticism/resolution - (aka Module Spec transforms) script@vX.Y.Z will have correctly versioned dependencies
 * Import Map generation
-* Vendor bundling
+* Vendor/dependency bundling
 * Minified Builds + sourcemaps
 * "Default" files (ala JSDelivr)
 * Custom querystring flags (ala ESM.sh; e.g. )

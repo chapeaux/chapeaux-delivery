@@ -2,41 +2,45 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - static cdn rhds@1.4.1</title>
-  <!--
-  JSPM Generator Import Map
-  Edit URL: https://generator.jspm.io/#Y2VhYGBkDM0rySzJSU1hcCjKSCnWT81JzU3NKyl2MNQz0TPUL8rQTUxOzi9KyczPQ+HoZRUDAExeJHNAAA
-  -->
+  <title>CDN Demo rhds@2.1.1</title>
   <script type="importmap">
-  {
-    "imports": {
-      "@rhds/elements/": "./v2-alpha/@rhds/elements@1.4.1/elements/",
-      "@rhds/elements/lib/": "./v2-alpha/@rhds/elements@1.1.0/lib/",
-      "@patternfly/elements/": "./v2-alpha/@patternfly/elements@3.0.1/elements/",
-      "@patternfly/icons/": "./v2-alpha/@patternfly/icons@1.0.2/"
-    },
-    "scopes": {
-      "./": {
-        "@floating-ui/core": "./v2-alpha/@floating-ui/core@1.6.8/dist/floating-ui.core.mjs",
-        "@floating-ui/dom": "./v2-alpha/@floating-ui/dom@1.6.11/dist/floating-ui.dom.mjs",
-        "@floating-ui/utils": "./v2-alpha/@floating-ui/utils@0.2.8/dist/floating-ui.utils.mjs",
-        "@floating-ui/utils/dom": "./v2-alpha/@floating-ui/utils@0.2.8/dist/floating-ui.utils.dom.mjs",
-        "@lit/context": "./v2-alpha/@lit/context@1.1.3/development/index.js",
-        "@lit/reactive-element": "./v2-alpha/@lit/reactive-element@2.0.4/development/reactive-element.js",
-        "@lit/reactive-element/decorators/": "./v2-alpha/@lit/reactive-element@2.0.4/development/decorators/",
-        "@patternfly/pfe-core": "./v2-alpha/@patternfly/pfe-core@3.0.0/core.js",
-        "@patternfly/pfe-core/": "./v2-alpha/@patternfly/pfe-core@3.0.0/",
-        "@rhds/elements/rh-avatar/rh-avatar.js": "./v2-alpha/@rhds/elements@1.4.1/elements/rh-avatar/rh-avatar.js",
-        "@rhds/tokens/media.js": "./v2-alpha/@rhds/tokens@2.1.0/js/media.js",
-        "lit": "./v2-alpha/lit@3.2.1/index.js",
-        "lit-element/lit-element.js": "./v2-alpha/lit-element@4.1.1/development/lit-element.js",
-        "lit-html": "./v2-alpha/lit-html@3.2.1/development/lit-html.js",
-        "lit-html/": "./v2-alpha/lit-html@3.2.1/development/",
-        "lit/": "./v2-alpha/lit@3.2.1/",
-        "tslib": "./v2-alpha/tslib@2.7.0/tslib.es6.mjs"
+    {
+      "imports": {
+        "@cpelements/elements/": "https://www.redhatstatic.com/dssf-001/v2/@cpelements/elements@2.0.0-alpha.47/elements/",
+        "@patternfly/elements/": "https://www.redhatstatic.com/dssf-001/v2/@patternfly/elements@4.0.2/",
+        "@patternfly/icons/": "https://www.redhatstatic.com/dssf-001/v2/@patternfly/icons@1.0.2/",
+        "@patternfly/pfe-core": "https://www.redhatstatic.com/dssf-001/v2/@patternfly/pfe-core@4.0.4/core.js",
+        "@rhds/elements/": "https://www.redhatstatic.com/dssf-001/v2/@rhds/elements@2.1.1/elements/",
+        "@rhds/icons/": "https://www.redhatstatic.com/dssf-001/v2/@rhds/icons@1.1.2/",
+        "@rhds/tokens": "https://www.redhatstatic.com/dssf-001/v2/@rhds/tokens@2.1.1/"
+      },
+      "scopes": {
+        "https://www.redhatstatic.com/dssf-001/v2/": {
+          "@floating-ui/core": "https://www.redhatstatic.com/dssf-001/v2/@floating-ui/core@1.6.8/dist/floating-ui.core.mjs",
+          "@floating-ui/dom": "https://www.redhatstatic.com/dssf-001/v2/@floating-ui/dom@1.6.12/dist/floating-ui.dom.mjs",
+          "@floating-ui/utils": "https://www.redhatstatic.com/dssf-001/v2/@floating-ui/utils@0.2.8/dist/floating-ui.utils.mjs",
+          "@floating-ui/utils/dom": "https://www.redhatstatic.com/dssf-001/v2/@floating-ui/utils@0.2.8/dist/floating-ui.utils.dom.mjs",
+          "@lit/context": "https://www.redhatstatic.com/dssf-001/v2/@lit/context@1.1.3/index.js",
+          "@lit/reactive-element": "https://www.redhatstatic.com/dssf-001/v2/@lit/reactive-element@2.0.4/reactive-element.js",
+          "@lit/reactive-element/decorators/": "https://www.redhatstatic.com/dssf-001/v2/@lit/reactive-element@2.0.4/decorators/",
+          "@patternfly/pfe-core/": "https://www.redhatstatic.com/dssf-001/v2/@patternfly/pfe-core@4.0.4/",
+          "@patternfly/pfe-core/ssr-shims.js": "https://www.redhatstatic.com/dssf-001/v2/@patternfly/pfe-core@4.0.4/core.js",
+          "@rhds/elements/lib/": "https://www.redhatstatic.com/dssf-001/v2/@rhds/elements@2.1.1/lib/",
+          "@rhds/elements/": "https://www.redhatstatic.com/dssf-001/v2/@rhds/elements@2.1.1/elements/",
+          "@rhds/icons/ui/": "https://www.redhatstatic.com/dssf-001/v2/@rhds/icons@1.1.2/ui/",
+          "@rhds/tokens/css/": "https://www.redhatstatic.com/dssf-001/v2/@rhds/tokens@2.1.1/css/",
+          "@rhds/tokens/media.js": "https://www.redhatstatic.com/dssf-001/v2/@rhds/tokens@2.1.1/js/media.js",
+          "lit": "https://www.redhatstatic.com/dssf-001/v2/lit@3.2.1/index.js",
+          "lit-element/lit-element.js": "https://www.redhatstatic.com/dssf-001/v2/lit-element@4.1.1/lit-element.js",
+          "lit-html": "https://www.redhatstatic.com/dssf-001/v2/lit-html@3.2.1/lit-html.js",
+          "lit-html/": "https://www.redhatstatic.com/dssf-001/v2/lit-html@3.2.1/",
+          "lit/": "https://www.redhatstatic.com/dssf-001/v2/lit@3.2.1/",
+          "prism-esm": "https://www.redhatstatic.com/dssf-001/v2/prism-esm@1.29.0-fix.6/prism.js",
+          "prism-esm/components/": "https://www.redhatstatic.com/dssf-001/v2/prism-esm@1.29.0-fix.6/components/",
+          "tslib": "https://www.redhatstatic.com/dssf-001/v2/tslib@2.8.1/tslib.es6.mjs"
+        }
       }
     }
-  }
   </script>
   <style>
   @layer reset, fonts, rhds-min-css, base, lightdom, patterns, demo, overrides;
@@ -44,13 +48,13 @@
   @import url('https://ux.redhat.com/styles/reset.css') layer(reset);
   @import url('https://ux.redhat.com/styles/fonts.css') layer(fonts);
   @import url('https://staging-chansey--red-hat-design-system.netlify.app/assets/rhds.min.css') layer(rhds-min-css);
-  @import url('./v2-alpha/@rhds/elements@1.4.1/elements/rh-skip-link/rh-skip-link-lightdom-shim.css') layer(lightdom);
-  @import url('./v2-alpha/@rhds/elements@1.4.1/elements/rh-navigation-secondary/rh-navigation-secondary-lightdom.css') layer(lightdom);
-  @import url('./v2-alpha/@rhds/elements@1.4.1/elements/rh-audio-player/rh-audio-player-lightdom.css') layer(lightdom);
-  @import url('./v2-alpha/@rhds/elements@1.4.1/elements/rh-pagination/rh-pagination-lightdom.css') layer(lightdom);
-  @import url('./v2-alpha/@rhds/elements@1.4.1/elements/rh-table/rh-table-lightdom.css') layer(lightdom);
-  @import url('./v2-alpha/@rhds/elements@1.4.1/elements/rh-tile/rh-tile-lightdom.css') layer(lightdom);
-  @import url('https://ga.jspm.io/npm:@rhds/elements@1.4.1/elements/rh-footer/rh-footer-lightdom.css') layer(lightdom);
+  @import url('https://www.redhatstatic.com/dssf-001/v2/@rhds/elements@1.4.1/elements/rh-skip-link/rh-skip-link-lightdom-shim.css') layer(lightdom);
+  @import url('https://www.redhatstatic.com/dssf-001/v2/@rhds/elements@1.4.1/elements/rh-navigation-secondary/rh-navigation-secondary-lightdom.css') layer(lightdom);
+  @import url('https://www.redhatstatic.com/dssf-001/v2/@rhds/elements@1.4.1/elements/rh-audio-player/rh-audio-player-lightdom.css') layer(lightdom);
+  @import url('https://www.redhatstatic.com/dssf-001/v2/@rhds/elements@1.4.1/elements/rh-pagination/rh-pagination-lightdom.css') layer(lightdom);
+  @import url('https://www.redhatstatic.com/dssf-001/v2/@rhds/elements@1.4.1/elements/rh-table/rh-table-lightdom.css') layer(lightdom);
+  @import url('https://www.redhatstatic.com/dssf-001/v2/@rhds/elements@1.4.1/elements/rh-tile/rh-tile-lightdom.css') layer(lightdom);
+  @import url('https://www.redhatstatic.com/dssf-001/v2/@rhds/elements@1.4.1/elements/rh-footer/rh-footer-lightdom.css') layer(lightdom);
 
   @layer base {
     a {
@@ -594,11 +598,7 @@
         takes longer to do the inference just to find the tumor, which is going to be on a smaller size. The dimensions are going to be much smaller once we crop to the region of interest. But all of
         those details, that's maybe not easy to explain in a few sentences and even the way I explained it is probably really confusing.
       </rh-cue>
-      <rh-cue start="26:45" voice="Burr Sutter">
-        I do love that use case, like you mentioned, the cropping, even in one scenario that we worked on for another project, we specifically decided to pixelate the image that we had taken, because
-        we knew that we could get the outcome we wanted by even just using a smaller or having less resolution in our image. And therefore, as we transferred it from the mobile device, the edge
-        device, up into the cloud, we wanted that smaller image just for transfer purposes. And still, we could get the accuracy we needed by a lot of testing.
-      </rh-cue>
+      <rh-cue start="26:45" vdirect
       <rh-cue start="27:11" voice="Burr Sutter">
         And one thing that's interesting about that, from my perspective, is, if you're doing image processing, sometimes it takes a while for this transaction to occur. I come from a traditional
         application background, where I'm reading and writing things from a database, or a message broker, or moving data from one place to another. Those things happen sub-second normally, even with
@@ -809,7 +809,20 @@ AWSServiceRoleForElasticLoadBalancing</script>
   </rh-tooltip>
 
   <rh-back-to-top href="#top">Back to top</rh-back-to-top>
-  
+  <section class="rh-alert-toast-group"><!----><!---->
+    <rh-alert toasted variant="toast" role="status" aria-live="polite" id="pfe-iztee9o49" state="info">
+      <h3 slot="header"><!--?lit$432457596$-->Toast!</h3>
+      <p class="text"><!--?lit$432457596$-->New toast 6</p>
+    </rh-alert>
+    <rh-alert variant="toast" role="status" aria-live="polite" id="pfe-iztee9o49" state="info">
+      <h3 slot="header"><!--?lit$432457596$-->Toast!</h3>
+      <p class="text"><!--?lit$432457596$-->New toast 6</p>
+    </rh-alert>
+    <rh-alert variant="toast" role="status" aria-live="polite" id="pfe-iztee9o49" state="info">
+      <h3 slot="header"><!--?lit$432457596$-->Toast!</h3>
+      <p class="text"><!--?lit$432457596$-->New toast 6</p>
+    </rh-alert>
+  <!----></section>
 </rh-surface>
 
 <rh-footer data-analytics-region="page-footer">
@@ -819,7 +832,7 @@ AWSServiceRoleForElasticLoadBalancing</script>
   <rh-footer-social-link slot="social-links" icon="linkedin"><a href="https://www.linkedin.com/company/red-hat" data-analytics-region="social-links-exit" data-analytics-category="Footer|social-links" data-analytics-text="LinkedIn">LinkedIn</a></rh-footer-social-link>
   <rh-footer-social-link slot="social-links" icon="youtube"><a href="https://www.youtube.com/user/RedHatVideos" data-analytics-region="social-links-exit" data-analytics-category="Footer|social-links" data-analytics-text="YouTube">YouTube</a></rh-footer-social-link>
   <rh-footer-social-link slot="social-links" icon="facebook"><a href="https://www.facebook.com/redhatinc" data-analytics-region="social-links-exit" data-analytics-category="Footer|social-links" data-analytics-text="Facebook">Facebook</a></rh-footer-social-link>
-  <rh-footer-social-link slot="social-links" icon="twitter"><a href="https://twitter.com/RedHat" data-analytics-region="social-links-exit" data-analytics-category="Footer|social-links" data-analytics-text="Twitter">X/Twitter</a></rh-footer-social-link>
+  <rh-footer-social-link slot="social-links" icon="x"><a href="https://twitter.com/RedHat" data-analytics-region="social-links-exit" data-analytics-category="Footer|social-links" data-analytics-text="Twitter">X/Twitter</a></rh-footer-social-link>
   <h3 slot="links" data-analytics-text="Products">Products</h3>
   <ul slot="links">
     <li><a href="https://redhat.com/en/technologies/linux-platforms/enterprise-linux" data-analytics-category="Footer|Products" data-analytics-text="Red Hat Enterprise Linux">Red Hat Enterprise Linux</a></li>
@@ -868,7 +881,7 @@ AWSServiceRoleForElasticLoadBalancing</script>
   <div class="site-status-container" slot="universal">
     <rh-site-status></rh-site-status>
   </div>
-
+  
   <!-- Universal Footer -->
   <rh-footer-universal slot="universal">
     <h3 slot="links-primary" data-analytics-text="Red Hat legal and privacy links" hidden>Red Hat legal and privacy links</h3>
@@ -898,35 +911,34 @@ AWSServiceRoleForElasticLoadBalancing</script>
   
 <script id="rendered-js" type="module">
 import '@rhds/elements/rh-accordion/rh-accordion.js';
-import '@rhds/elements/rh-card/rh-card.js';
-import '@rhds/elements/rh-cta/rh-cta.js';
-import '@rhds/elements/rh-alert/rh-alert.js';
-import '@rhds/elements/rh-button/rh-button.js';
-import '@rhds/elements/rh-audio-player/rh-audio-player.js';
-import '@rhds/elements/rh-avatar/rh-avatar.js';
-import '@rhds/elements/rh-back-to-top/rh-back-to-top.js';
-import '@patternfly/elements/pf-icon/pf-icon.js';
-import '@rhds/elements/rh-badge/rh-badge.js';
-import '@rhds/elements/rh-blockquote/rh-blockquote.js';
-import '@rhds/elements/rh-code-block/rh-code-block.js';
-import '@rhds/elements/rh-dialog/rh-dialog.js';
-import '@rhds/elements/rh-footer/rh-footer.js';
-import '@rhds/elements/rh-navigation-secondary/rh-navigation-secondary.js';
-import '@rhds/elements/rh-pagination/rh-pagination.js';
-import '@rhds/elements/rh-site-status/rh-site-status.js';
-import '@rhds/elements/rh-skip-link/rh-skip-link.js';
-import '@rhds/elements/rh-spinner/rh-spinner.js';
-import '@rhds/elements/rh-stat/rh-stat.js';
-import '@rhds/elements/rh-subnav/rh-subnav.js';
-import '@rhds/elements/rh-surface/rh-surface.js';
-import '@patternfly/elements/pf-switch/pf-switch.js';
-import '@rhds/elements/rh-table/rh-table.js';
-import '@rhds/elements/rh-tabs/rh-tabs.js';
-import '@rhds/elements/rh-tag/rh-tag.js';
-import '@rhds/elements/rh-tile/rh-tile.js';
-import '@rhds/elements/rh-timestamp/rh-timestamp.js';
-import '@rhds/elements/rh-tooltip/rh-tooltip.js';
-
+  import '@rhds/elements/rh-card/rh-card.js';
+  import '@rhds/elements/rh-cta/rh-cta.js';
+  import '@rhds/elements/rh-alert/rh-alert.js';
+  import '@rhds/elements/rh-button/rh-button.js';
+  import '@rhds/elements/rh-audio-player/rh-audio-player.js';
+  import '@rhds/elements/rh-avatar/rh-avatar.js';
+  import '@rhds/elements/rh-back-to-top/rh-back-to-top.js';
+  import '@patternfly/elements/pf-icon/pf-icon.js';
+  import '@rhds/elements/rh-badge/rh-badge.js';
+  import '@rhds/elements/rh-blockquote/rh-blockquote.js';
+  import '@rhds/elements/rh-code-block/rh-code-block.js';
+  import '@rhds/elements/rh-dialog/rh-dialog.js';
+  import '@rhds/elements/rh-footer/rh-footer.js';
+  import '@rhds/elements/rh-navigation-secondary/rh-navigation-secondary.js';
+  import '@rhds/elements/rh-pagination/rh-pagination.js';
+  import '@rhds/elements/rh-site-status/rh-site-status.js';
+  import '@rhds/elements/rh-skip-link/rh-skip-link.js';
+  import '@rhds/elements/rh-spinner/rh-spinner.js';
+  import '@rhds/elements/rh-stat/rh-stat.js';
+  import '@rhds/elements/rh-subnav/rh-subnav.js';
+  import '@rhds/elements/rh-surface/rh-surface.js';
+  import '@patternfly/elements/pf-switch/pf-switch.js';
+  import '@rhds/elements/rh-table/rh-table.js';
+  import '@rhds/elements/rh-tabs/rh-tabs.js';
+  import '@rhds/elements/rh-tag/rh-tag.js';
+  import '@rhds/elements/rh-tile/rh-tile.js';
+  import '@rhds/elements/rh-timestamp/rh-timestamp.js';
+  import '@rhds/elements/rh-tooltip/rh-tooltip.js';
 
 const themeSwitcher = document.querySelector('.theme-switch pf-switch');
 const surface = document.querySelector('rh-surface.container');
